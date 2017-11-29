@@ -1,0 +1,46 @@
+{
+	"name": "natanfelles/lemp",
+	"description": "LEMP Manager",
+	"type": "library",
+	"keywords": [
+		"server",
+		"lemp",
+		"linux",
+		"nginx",
+		"mysql",
+		"memcached",
+		"mariadb",
+		"php",
+		"manager",
+		"cli"
+	],
+	"homepage": "https://github.com/natanfelles/lemp",
+	"license": "MIT",
+	"authors": [
+	{
+		"name": "Natan Felles",
+		"email": "natanfelles@gmail.com",
+		"homepage": "https://natanfelles.github.io",
+		"role": "lead"
+	}],
+	"support":
+	{
+		"issues": "https://github.com/natanfelles/lemp/issues",
+		"wiki": "https://github.com/natanfelles/lemp/wiki",
+		"source": "https://github.com/natanfelles/lemp"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"require":
+	{
+		"symfony/console": "^3.3",
+		"symfony/templating": "^3.3",
+		"mjanser/systemctl": "dev-master"
+	},
+	"autoload": {
+        "psr-4": { "Lemp\\": "src" }
+    },
+	"bin": [
+		"bin/lemp"
+	]
+}
